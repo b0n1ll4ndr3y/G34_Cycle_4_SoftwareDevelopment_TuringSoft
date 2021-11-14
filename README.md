@@ -12,7 +12,7 @@
 
 * Andrey Bonilla - Team Leader
 
-* Jeyson Hurtado - Software Designer
+* Yeison Hurtado - Software Designer
 
 * Diego Fernando Henao del Rio - UI Designer
 
