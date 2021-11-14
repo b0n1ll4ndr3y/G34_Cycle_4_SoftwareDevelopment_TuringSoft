@@ -1,0 +1,130 @@
+###
+POST http://localhost:3000/dashboard/owners HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Andrey Bonilla",
+    "document_type": "C.C.",
+    "document": "1054571033",
+    "phone": "305487544",
+    "email": "bonilla@gmail.com"
+}
+
+###
+POST http://localhost:3000/dashboard/pets HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Dogo",
+    "animal_type": "Perro",
+    "breed": "Criollo",
+    "date_born": "12/03/2019",
+    "gender": "Macho",
+    "id_owner": "619066a8e9a97a5ec6e8481d"
+}
+
+###
+POST http://localhost:3000/dashboard/veterinaries HTTP/1.1
+Content-Type: application/json
+
+{
+    "nit": "1-22329763",
+    "name": "AnimalsPet",
+    "address": "Carrera 8 # 12-3",
+    "phone": "3214567",
+    "email": "animalspet@pets.com"
+}
+
+###
+POST http://localhost:3000/dashboard/doctors HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Sebastian Mendez",
+    "specialty": "Anestesiología veterinaria",
+    "phone": "3124568790",
+    "id_veterinary": ""
+}
+
+
+###
+GET http://localhost:3000/dashboard/owners HTTP/1.1
+###
+GET http://localhost:3000/dashboard/owners/id HTTP/1.1
+
+###
+GET http://localhost:3000/dashboard/pets HTTP/1.1
+###
+GET http://localhost:3000/dashboard/pets/id HTTP/1.1
+
+###
+GET http://localhost:3000/dashboard/veterinaries HTTP/1.1
+###
+GET http://localhost:3000/dashboard/veterinaries/id HTTP/1.1
+
+###
+GET http://localhost:3000/dashboard/doctors HTTP/1.1
+###
+GET http://localhost:3000/dashboard/doctors/id HTTP/1.1
+
+
+###
+PUT http://localhost:3000/dashboard/owners/id HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Andrey Bonilla",
+    "document_type": "C.C.",
+    "document": "1054571033",
+    "phone": "305487544",
+    "email": "bonilla@gmail.com"
+}
+
+###
+PUT http://localhost:3000/dashboard/pets/id HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Dogo",
+    "animal_type": "Perro",
+    "breed": "Criollo",
+    "date_born": "12/03/2019",
+    "gender": "Macho",
+    "id_owner": "619066a8e9a97a5ec6e8481d"
+}
+
+###
+PUT http://localhost:3000/dashboard/veterinaries/id HTTP/1.1
+Content-Type: application/json
+
+{
+    "nit": "1-22329763",
+    "name": "AnimalsPet",
+    "address": "Carrera 8 # 12-3",
+    "phone": "3214567",
+    "email": "animalspet@pets.com"
+}
+
+###
+PUT http://localhost:3000/dashboard/doctors/id HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Sebastian Mendez",
+    "specialty": "Anestesiología veterinaria",
+    "phone": "3124568790",
+    "id_veterinary": ""
+}
+
+
+###
+DELETE http://localhost:3000/dashboard/owners/id HTTP/1.1
+
+###
+DELETE http://localhost:3000/dashboard/pets/id HTTP/1.1
+
+###
+DELETE http://localhost:3000/dashboard/veterinaries/id HTTP/1.1
+
+###
+DELETE http://localhost:3000/dashboard/doctors/id HTTP/1.1
